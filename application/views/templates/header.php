@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title><?php echo $title;?></title>
 	    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="<?php echo asset_url();?>css/fonts_lato.css">
+        <link rel="stylesheet" href="<?php echo asset_url();?>css/fonts.css">
         <link rel="stylesheet" href="<?php echo asset_url();?>css/font-awesome.css">
         <link rel="stylesheet" href="<?php echo asset_url();?>css/bootstrap.css">
         <link rel="stylesheet" href="<?php echo asset_url();?>css/bootstrap-theme.css">
