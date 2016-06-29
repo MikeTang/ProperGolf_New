@@ -46,7 +46,7 @@ define('BASE_URL', 'http://www.properswing.com/');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', 'root');
-define('DB_NAME', 'infinity');
+define('DB_NAME', 'propergolf');
 define('TIME_LIMIT', 602000);
 
 
