@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+  font-weight: 400;
+  font-family: 'Raleway', san-serif;
+  color: #555 !important; }
+
+.container{
+  width:1100px;
+}
+
+header {
+  border-bottom: 1px solid #ddd; }
+
+.t_c {
+  text-align: center; }
+
+.right {
+  float: right; }
+
+.logo div {
+  height: 50px;
+  width: 150px;
+  background: #eee;
+  line-height: 50px;
+  text-align: center; }
+
+.nav ul li {
+  float: right;
+  margin-left: 20px;
+  line-height: 50px; }
+
+.hero {
+  padding-top: 80px;
+  height: 550px;
+  background: #eee; }
+
+.section, .section2 {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.section2 {
+  background: #eee; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 30px; }
+
+p {
+  line-height: 24px;
+  font-size: 16px;
+  color: #666; }
+
+.title {
+  margin-bottom: 50px; }
+
+.video {
+  padding-left: 80px; }
+
+.signup {
+  padding-right: 80px; }
+
+.video_box {
+  height: 300px;
+  background: #ddd; }
+
+.signup .signup_box {
+  height: 300px;
+  background: #ddd; }
+
+.section h2 {
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
+.story {
+  height: 500px;
+  background: #ddd; }
