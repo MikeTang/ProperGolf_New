@@ -100,18 +100,23 @@
 <div class="container-fluid section2">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 t_c"><h2>Success Stories</h2></div>
-        </div>
-        <div class="row stories">
-          <div class="col-md-4">
-              <div class="story"></div>
-          </div>
-          <div class="col-md-4">
-              <div class="story"></div>
-          </div>
-          <div class="col-md-4">
-              <div class="story"></div>
-          </div>
+            <div class="col-md-6">
+              <br>
+              <h2>See it in action</h2>
+              <br><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit bibendum orci. Nunc rhoncus finibus mauris at bibendum. Ut rutrum nunc non ex interdum elementum. Curabitur rutrum enim a magna iaculis, eu elementum mi efficitur. Phasellus justo risus, porttitor vel pellentesque vitae, gravida accumsan erat.</p>
+              <br>
+              <p>Phasellus justo risus, porttitor vel pellentesque vitae, gravida accumsan erat.</p>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="video_box">
+                
+              </div>
+            </div>
+        
+          
+          
         </div>
     </div>
 </div>
@@ -148,6 +153,25 @@
                 <p>Would you start learning piano by imitating Mozart? Of course not! You begin by learning the basics: music theory and practicing scales. It's the same in Golf, you begin by learning basic concepts and build upon it. These guys won't teach you that, but ProperGolf will.</p>
             </div>
 
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid section2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 t_c"><h2>Success Stories</h2></div>
+        </div>
+        <div class="row stories">
+          <div class="col-md-4">
+              <div class="story"></div>
+          </div>
+          <div class="col-md-4">
+              <div class="story"></div>
+          </div>
+          <div class="col-md-4">
+              <div class="story"></div>
+          </div>
         </div>
     </div>
 </div>
