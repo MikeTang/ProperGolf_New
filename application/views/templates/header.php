@@ -14,7 +14,7 @@
 
         <link rel="stylesheet" href="<?php echo asset_url();?>css/bootstrap.css">
         <link rel="stylesheet" href="<?php echo asset_url();?>css/bootstrap-theme.css">
-        <link rel="stylesheet" href="<?php echo asset_url();?>css/main.css">
+        <link rel="stylesheet" href="<?php echo asset_url();?>css/main2.css">
         <script src="https://use.fontawesome.com/3b3ac5636e.js"></script>
 	</head>
 	<body>
