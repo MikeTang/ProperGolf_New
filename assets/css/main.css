@@ -104,7 +104,7 @@ header {
 .container-bg{
   position: absolute;
   width:100%;
-  height:600px;
+  height:580px;
   overflow: hidden;
   top:0;
   left:0;
@@ -113,10 +113,10 @@ header {
 }
   .container-bg-overlay{
     width:100%;
-    height:600px;
+    height:580px;
     position: absolute;
     z-index: 11;
-    background: rgba(0,0,0,0.2)
+    background: rgba(0,0,0,0.15)
   }
   .container-bg video{
     width:100%;
@@ -126,7 +126,7 @@ header {
   position: relative;
   z-index: 50;
   padding-top: 80px;
-  height: 600px;
+  height: 580px;
  }
 
  .hero_button{
@@ -151,6 +151,18 @@ header {
     color:#fff;
     text-decoration: none;
   }
+.play_button{
+  margin-top: 20px;
+  margin-bottom: 70px
+}
+  .play_button a{
+    font-size: 100px;
+    color:rgba(255,255,255,0.7);
+  }
+    .play_button a:hover{
+      font-size: 100px;
+      color:rgba(255,255,255,0.9);
+    }
 
 .section, .section2 {
   padding-top: 50px;
@@ -171,8 +183,8 @@ p {
   color: #666; }
 
 .title {
-  margin-top:80px;
-  margin-bottom: 50px; }
+  margin-top:65px;
+  margin-bottom: 45px; }
 
   .title h1{
     font-size:50px;

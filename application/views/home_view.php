@@ -52,7 +52,7 @@
       
       <div class="row play_button">
           <div class="col-md-12 t_c">
-              <a href="" class="hero_button">Get Started For Free</a>
+              <a href=""><i class="fa fa-play-circle" aria-hidden="true"></i></a>
           </div>
       </div>
 
