@@ -11,10 +11,10 @@
 	    <title><?php echo $title;?></title>
 	    <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="<?php echo asset_url();?>css/font-awesome.css">
+
         <link rel="stylesheet" href="<?php echo asset_url();?>css/bootstrap.css">
         <link rel="stylesheet" href="<?php echo asset_url();?>css/bootstrap-theme.css">
         <link rel="stylesheet" href="<?php echo asset_url();?>css/main.css">
-
+        <script src="https://use.fontawesome.com/3b3ac5636e.js"></script>
 	</head>
 	<body>
