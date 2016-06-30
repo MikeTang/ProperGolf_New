@@ -99,19 +99,55 @@
 
 <div class="container-fluid section2">
     <div class="container">
-        <div class="row title">
+        <div class="row">
             <div class="col-md-12 t_c"><h2>Success Stories</h2></div>
         </div>
+        <div class="row stories">
+          <div class="col-md-4">
+              <div class="story"></div>
+          </div>
+          <div class="col-md-4">
+              <div class="story"></div>
+          </div>
+          <div class="col-md-4">
+              <div class="story"></div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid section">
+    <div class="container usps-sect">
         <div class="row">
-          <div class="col-md-4">
-              <div class="story"></div>
-          </div>
-          <div class="col-md-4">
-              <div class="story"></div>
-          </div>
-          <div class="col-md-4">
-              <div class="story"></div>
-          </div>
+            <div class="col-md-12 t_c">
+                <h2>ProperGolf Vs. The Other Guys</h2>
+            </div>
+        </div>
+         <div class="row versus-content">
+            <div class="col-md-5">
+                
+                <h3>ProperGolf</h3>
+                <p >ProperGolf is not another typical program that promises to take 2 strokes off your game in 2 weeks. We have spent thousands of hours crafting this golf learning curriculum based on proved methodoligies that work for beginners and intermediate golfers.
+                </p><br>
+                <p>Throughout this program, we're start with basic concepts and build upon them via convenient bite-sized videos. We will teach you how to build good habits, and also the reasoning behind them. You will have access to a personal trainer which you can ask questions and submit videos for feedback.
+                </p><br>
+                <p>If you're willing to put the time in to learn and practice, you will see improvements in your game in the months to come.</p>
+            </div>
+            
+            <div class="col-md-2">
+              <div class="versus-line"></div>
+              <div class="versus">&nbsp;Vs.</div>
+            </div>
+
+            <div class="col-md-5">
+                <h3>The Other Guys</h3>
+                <p>Tired of trying countless 'Improve your game in 2 weeks' programs but never actually improve?</p>
+                <br/>
+                <p>These guys captured your interest with false promises, but think about it, that's not how learning is actually done!</p> 
+                <br>
+                <p>Would you start learning piano by imitating Mozart? Of course not! You begin by learning the basics: music theory and practicing scales. It's the same in Golf, you begin by learning basic concepts and build upon it. These guys won't teach you that, but ProperGolf will.</p>
+            </div>
+
         </div>
     </div>
 </div>

@@ -168,8 +168,8 @@ header {
     }
 
 .section, .section2 {
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 60px;
+  padding-bottom: 80px; }
 
 .section2 {
   background: #eee; }
@@ -247,4 +247,21 @@ p {
     font-weight: 600;
     color:#555;
     margin-bottom: 15px;
+  }
+.stories{
+  margin-top:40px;
+}
+.versus-content{
+  margin-top: 60px;
+}
+  .versus{
+    width:80px;
+    height:80px;
+    text-align: center;
+    line-height: 80px;
+    margin:80px auto auto auto;
+    background: #eee;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size:30px;
   }
