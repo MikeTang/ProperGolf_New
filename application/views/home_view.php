@@ -13,9 +13,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      
-      
+   
       <ul class="nav navbar-nav navbar-right">
         
         <li>
@@ -65,14 +63,35 @@
 </div>
 
 <div class="container-fluid section">
-    <div class="container">
+    <div class="container usps-sect">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 t_c">
                 <h2>Why ProperGolf?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quis velit modi recusandae, dolores unde architecto esse vero placeat alias doloribus nesciunt, aut laboriosam molestiae officia. Ex temporibus quibusdam aspernatur.</p>
+                <p>Lorem ipsum dolor sit molestiae officia. Ex temporibus quibusdam aspernatur. </p>
             </div>
-            <div class="col-md-6">
-                <div class="video_box"></div>
+        </div>
+         <div class="row usps">
+            <div class="col-md-4 t_c">
+                <div class="t_c">
+                  <div class="usp_image"></div>
+                </div>
+                
+                <h3>USP 1</h3>
+                <p >Lorem ipsum dolor sit molestiae officia. Ex temporibus quibusdam aspernatur. </p>
+            </div>
+            <div class="col-md-4 t_c">
+                <div class="t_c">
+                  <div class="usp_image"></div>
+                </div>
+                <h3>USP 1</h3>
+                <p>Lorem ipsum dolor sit molestiae officia. Ex temporibus quibusdam aspernatur.</p>
+            </div>
+            <div class="col-md-4 t_c">
+                <div class="t_c">
+                  <div class="usp_image"></div>
+                </div>
+                <h3>USP 1</h3>
+                <p>Lorem ipsum dolor sit molestiae officia. Ex temporibus quibusdam aspernatur.</p>
             </div>
         </div>
     </div>
