@@ -42,7 +42,11 @@
 */
 
 // define('BASE_URL', 'http://yufa.jiongbook.com/');
+<<<<<<< HEAD
 define('BASE_URL', 'http://localhost:8888/');
+=======
+define('BASE_URL', 'http://properswing.com/');
+>>>>>>> 253377ffea3f304217a435a3d16a812801f321c3
 define('DB_HOSTNAME', '68.178.143.77');
 define('DB_USER', 'propergolf');
 define('DB_PASS', 'ProGolf123!');
