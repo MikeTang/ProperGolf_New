@@ -56,7 +56,7 @@
 
       <div class="row">
           <div class="col-md-12 t_c">
-              <a href="" class="hero_button">Get Started For Free</a>
+              <a href="<?php echo site_url('customize') ?>" class="hero_button">Get Started For Free</a>
           </div>
       </div>
   </div>

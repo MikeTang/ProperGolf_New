@@ -18,6 +18,10 @@
         
     });
 
+    $('.customize-checkbox').click(function(event) {
+        $('.bottom-nav').fadeIn();
+    });
+
     $('.btn-bug').click(function(e) {
         var number = $('#txt_phone').val();
         

@@ -59,6 +59,21 @@ header {
 
 .t_c {
   text-align: center; }
+.t_l{
+  text-align:left;
+}
+.t_r{
+  text-align: right;
+}
+.mtop5{margin-top: 5px;}
+.mtop10{margin-top: 10px;}
+.mtop15{margin-top: 15px;}
+.mtop20{margin-top: 20px;}
+.mtop30{margin-top: 30px;}
+.mtop40{margin-top: 40px;}
+.mtop50{margin-top: 50px;}
+.mb100{margin-bottom: 100px;}
+.pl0{padding-left: 0;}
 
 .right {
   float: right; }
@@ -69,6 +84,10 @@ header {
   width:100%;
   position: absolute;
   z-index: 100;
+}
+
+.clr-dark{
+  color:#777 !important;
 }
 
 .navbar-nav > li > a{
@@ -98,6 +117,14 @@ header {
 }
   .navbar-default .navbar-nav > li > a:hover{
     color:#fff;
+    text-shadow: none;
+  }
+
+  .navbar-default .navbar-nav.clr-dark > li > a{
+    color:#777;
+  }
+  .navbar-default .navbar-nav.clr-dark> li > a:hover{
+    color:#777;
     text-shadow: none;
   }
 
@@ -133,7 +160,7 @@ header {
 
  .hero_button{
   padding: 15px 30px;
-  border-radius: 30px;
+  border-radius: 5px;
   background: #35ad58;
   color:#fff;
   font-size: 16px;
@@ -276,3 +303,77 @@ p {
     border-left: 1px solid #ddd;
 
   }
+
+/*customize page*/
+
+.customize-sect{
+  max-width: 700px;
+}
+
+.selection-box-large{
+  border:1px solid #ddd;
+  background: #eee;
+  padding: 25px;
+  border-radius: 5px;
+  display: block;
+}
+  .icon-large{
+    background:rgba(255,255,255,0.1);
+    background: #ddd;
+    height:100px;
+    width:100px;
+    line-height: 100px;
+    font-size: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .selection-box-large h3{
+    font-size:20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .selection-box-large p{
+    font-size:14px;
+    margin-top: 5px;
+  }
+
+.selection-box-small{
+  border: 1px solid #ddd;
+  background: #eee;
+  border-radius: 5px;
+  height:120px;
+  margin-bottom: 30px;
+}
+.selection-box-small .checkbox{
+  margin:0;
+}
+.selection-box-small .checkbox label{
+  padding:50px 60px 50px 70px;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+}
+
+.bottom-nav{
+  border-top: 1px solid #ddd;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+  background: rgba(255,255,255,0.8);
+  display: none;
+}
+.bottom-nav p{
+  line-height: 60px;
+  font-weight: 600;
+}
+.bottom-nav .btn{
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 7px 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
