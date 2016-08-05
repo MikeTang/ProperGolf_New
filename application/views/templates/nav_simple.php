@@ -18,11 +18,6 @@
         
         <li>
           <a href="">
-            Sign Up
-          </a>
-        </li>
-        <li>
-          <a href="">
             Log In
           </a>
         </li>

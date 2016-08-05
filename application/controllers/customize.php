@@ -24,8 +24,37 @@ class Customize extends CI_Controller
           $this->load->view('templates/footer');
      }
 
-     public function area($page)
+     public function submit()
      {
+          $chipping = $this->input->post('chipping');
+          $pitching = $this->input->post('pitching');
+          $putting = $this->input->post('putting');
+          $irons = $this->input->post('irons');
+          $driver = $this->input->post('driver');
+
+           //set the session variables
+          $sessiondata = array();
+          if ($chipping == 1)
+               array_push($sessiondata, 'chipping');
+          if ($pitching == 1)
+               array_push($sessiondata, 'pitching');
+          if ($putting == 1)
+               array_push($sessiondata, 'putting');
+          if ($irons == 1)
+               array_push($sessiondata, 'irons');
+          if ($driver == 1)
+               array_push($sessiondata, 'driver');
+
+          redirect('customize/area/1');
           
+     }
+
+     public function area()
+     {
+          $data['title']='ProperGolf';  
+          $this->load->view('templates/header', $data);
+          $this->load->view('templates/nav_simple', $data);
+          $this->load->view('customize_area_view');
+          $this->load->view('templates/footer');
      }
 }?>

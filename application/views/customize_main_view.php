@@ -86,7 +86,7 @@
                     <p>Step 1 of 3</p>
                 </div>
                 <div class="col-xs-6 t_r pl0">
-                    <a href="<?php echo site_url('customize/area/1') ?>" class="btn btn-primary">Continue</a>
+                    <a href="<?php echo site_url('customize/area') ?>" class="btn btn-primary">Continue</a>
                 </div>
             </div>
             
