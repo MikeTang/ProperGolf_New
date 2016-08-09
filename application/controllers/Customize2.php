@@ -44,7 +44,6 @@ class Customize extends CI_Controller
                array_push($sessiondata, 'irons');
           if ($driver == 1)
                array_push($sessiondata, 'driver');
-
           redirect('customize/area/1');
           
      }
