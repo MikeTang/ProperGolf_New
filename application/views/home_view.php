@@ -9,6 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">ProperGolf</a>
+      <a class="navbar-brand" href="#">Learn Properly, Play Better!</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,7 +39,7 @@
 <div class="container-fluid hero">
   <div class="container">
       <div class="row title">
-          <div class="col-md-12 t_c"><h1>Learn Golf Properly</h1></div>
+          <div class="col-md-12 t_c"><h1>Finally a site that teaches Golf Properly!</h1></div>
           <div class="col-md-12 t_c"><h2>Using proven methodologies in easy to understand bite-sized lessons.</h2></div>
           
       </div>
@@ -63,7 +64,7 @@
             <div class="col-md-12 t_c">
                 <h2>Why ProperGolf?</h2>
                 <h3>100% proven to work for players of all levels.</h3>
-                <p>The program is designed to take you step by step, providing complete instruction and drills, taliored to your existing knowledge, ability, and specific needs.  Proper check points throughout the program allows you to track your progress.  This ensures you have the proper foundation before you move on to more advanced skills and guarantees proper learning and progression to a consistant, powerful swing!
+                <p>Complete step by step  step instruction and drills, taliored to your knowledge, ability, and specific needs.  Proper check points throughout the program tracks your progress and ensures proper foundations are set before moving on to more advanced skills.  This guarantees proper learning and progression to a consistant, powerful swing!
 </p>
             </div>
         </div>
@@ -102,7 +103,7 @@
               <h2>Frustrated?</h2>
                 <p>Golf information and instruction can be found all over YouTube and the internet. The problem is the information is incomplete, incorrect or not applicable to your needs.  It is difficult to distinguish the good from the bad.</p>
               <h2>Introducing Propergolf</h2>
-                <p>The latest, most comprehensive, and innovative step by step golf instruction ever created.  A complete program starting with the basics and proceeding to the most advanced golf theories and techniques.  We break golf down to simple to understand components.  Each component is presented in the correct sequence and reviewed in finite detail. This ensures there is no confusion in the learning process.</p>
+                <p>The most comprehensive and innovative step by step golf instruction ever created.  A complete program starting with the basics and proceeding to the most advanced golf theories and techniques.  We break golf down to simple to understand components.  Each component is presented in the correct sequence and reviewed in finite detail. This ensures there is no confusion in the learning process.</p>
               <br>
              </div>
             
