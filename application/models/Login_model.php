@@ -23,6 +23,13 @@ class Login_model extends CI_Model
           return $query;
      }
 
+     function get_user_by_email($email)
+     {
+          $sql = "select * from users where email = '" . $email . "'";
+          $query = $this->db->query($sql);
+          return $query;
+     }
+
 
      function get_user_by_phone($phone)
      {
@@ -31,9 +38,9 @@ class Login_model extends CI_Model
           return $query;
      }
 
-     function create_user($phone, $password){
-          $sql = "INSERT INTO grammarTestUsers (phone, password)
-                  VALUES ('{$phone}','" . md5($password) . "');";
+     function create_user($name, $email, $password){
+          $sql = "INSERT INTO users (name, email, password)
+                  VALUES ('{$name}', '{$email}','" . md5($password) . "');";
           $query = $this->db->query($sql);
           return $query;
      }

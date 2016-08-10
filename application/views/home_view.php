@@ -9,12 +9,20 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">ProperGolf</a>
-      <a class="navbar-brand" href="#">Learn Properly, Play Better!</a>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-   
+      
+      <ul class="nav navbar-nav navbar-left">
+        
+        <li>
+          <p class="slogan">Learn Properly, Play Better!</p>
+        </li>
+        <li>
+  
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         
         <li>
@@ -39,7 +47,7 @@
 <div class="container-fluid hero">
   <div class="container">
       <div class="row title">
-          <div class="col-md-12 t_c"><h1>Finally a site that teaches Golf Properly!</h1></div>
+          <div class="col-md-12 t_c"><h1>Finally, a site that teaches Golf Properly!</h1></div>
           <div class="col-md-12 t_c"><h2>Using proven methodologies in easy to understand bite-sized lessons.</h2></div>
           
       </div>
@@ -64,14 +72,14 @@
             <div class="col-md-12 t_c">
                 <h2>Why ProperGolf?</h2>
                 <h3>100% proven to work for players of all levels.</h3>
-                <p>Complete step by step  step instruction and drills, taliored to your knowledge, ability, and specific needs.  Proper check points throughout the program tracks your progress and ensures proper foundations are set before moving on to more advanced skills.  This guarantees proper learning and progression to a consistant, powerful swing!
+                <p>Complete step by step  step instruction and drills, taliored to your knowledge, ability, and specific needs.  Proper check points throughout the program tracks your progress and ensures proper foundations are set before moving on to more advanced skills. <br> This guarantees proper learning and progression to a consistant, powerful swing!
 </p>
             </div>
         </div>
          <div class="row usps">
             <div class="col-md-4 t_c">
                 <div class="t_c">
-                  <div class="usp_image"></div>
+                  <div class="usp_image"><i class="fa fa-list-ol" aria-hidden="true"></i></div>
                 </div>
                 
                 <h3>Simple</h3>
@@ -79,14 +87,14 @@
             </div>
             <div class="col-md-4 t_c">
                 <div class="t_c">
-                  <div class="usp_image"></div>
+                  <div class="usp_image"><i class="fa fa-sitemap" aria-hidden="true"></i></div>
                 </div>
                 <h3>Organized</h3>
                 <p>Information is organized and taught in the proper sequence.</p>
             </div>
             <div class="col-md-4 t_c">
                 <div class="t_c">
-                  <div class="usp_image"></div>
+                  <div class="usp_image"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
                 </div>
                 <h3>Proper Practice</h3>
                 <p>Learn to practice properly and see rapid progression.</p>
@@ -102,7 +110,7 @@
               <br>
               <h2>Frustrated?</h2>
                 <p>Golf information and instruction can be found all over YouTube and the internet. The problem is the information is incomplete, incorrect or not applicable to your needs.  It is difficult to distinguish the good from the bad.</p>
-              <h2>Introducing Propergolf</h2>
+              <h2 class="mtop50">Introducing ProperGolf</h2>
                 <p>The most comprehensive and innovative step by step golf instruction ever created.  A complete program starting with the basics and proceeding to the most advanced golf theories and techniques.  We break golf down to simple to understand components.  Each component is presented in the correct sequence and reviewed in finite detail. This ensures there is no confusion in the learning process.</p>
               <br>
              </div>

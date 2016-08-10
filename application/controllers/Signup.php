@@ -12,30 +12,21 @@ class Signup extends CI_Controller
         $this->load->helper('html');
         $this->load->database();
         $this->load->library('form_validation');
-        $this->load->library('alibabaAliqinFcSmsNumSendRequest');
-        $this->load->library('TopClient');
         //load the login model
         $this->load->model('login_model');
     }
 
     public function index()
      {
-        $_SESSION["current_page"] = current_url();
-        //check if locale is set
-        if (!isset($_SESSION["locale"])){
-           redirect("lang/set/cn");     
-        }
-        
-        date_default_timezone_set('Asia/Hong_Kong');
           //get the posted values
-          $phone = $this->input->post("txt_phone");
-          $phoneCode = $this->input->post("txt_phoneCode");
+          $name = $this->input->post("txt_name");
+          $email = $this->input->post("txt_email");
           $password = $this->input->post("txt_password");
           $rpassword = $this->input->post("txt_rpassword");
 
           //set validations
-          $this->form_validation->set_rules("txt_phone", "Phone", "trim|numeric|required");
-          $this->form_validation->set_rules("txt_phoneCode", "Validation Code", "trim|required");
+          $this->form_validation->set_rules("txt_name", "Name", "trim|required");
+          $this->form_validation->set_rules("txt_email", "Email", "trim|required");
           $this->form_validation->set_rules("txt_password", "Password", "trim|required|matches[txt_rpassword]|md5");
           $this->form_validation->set_rules("txt_rpassword", "Confirm Password", "trim|required");
           $data = array(
@@ -49,19 +40,19 @@ class Signup extends CI_Controller
           {
                //validation fails or not logged
             $this->load->view('templates/header', $data);
-            $this->load->view('templates/nav', $data);
+            $this->load->view('templates/nav_simple', $data);
             $this->load->view('signup_view');
-            $this->load->view('templates/footer_reg');
+            $this->load->view('templates/footer');
              
           }
           //if form was submitted (i.e. entered username/pass/code)
           else
           {
                //if arrived here via pressing the sign up button
-               if ($this->input->post('btn_signup') == $_SESSION['BTN_SIGNUP'])
+               if ($this->input->post('btn_signup') == 'Signup')
                {
                     //check if user exists
-                    $usr_result = $this->login_model->get_user_by_phone($phone);
+                    $usr_result = $this->login_model->get_user_by_email($email);
   
                     if ($usr_result->num_rows() > 0){
                          //user exists, login instead
@@ -69,28 +60,15 @@ class Signup extends CI_Controller
                           redirect('signup/index');      
                     }
                     else{    
-                         //if code is valid, proceed
+                        //create user in db
+                        $this->login_model->create_user($name, $email, $password);
+                        //save user_id in session
 
-                        if (!isset($_SESSION["security_code"])){
-                            $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Validation Code Incorrect</div>');
-                            redirect('signup/index'); 
-                        }
+                        $usr_result = $this->login_model->get_user_by_email($email);
+                        $user_id = $usr_result->result()[0]->id;
 
-                        if ($phoneCode == $_SESSION["security_code"]){
-                            //create user in db
-                            $this->login_model->create_user($phone, $password);
-                            //save user_id in session
-
-                            $usr_result = $this->login_model->get_user_by_phone($phone);
-                            $user_id = $usr_result->result()[0]->id;
-
-                            $_SESSION["user_id"] = $user_id;
-                            redirect('test/index');
-
-                        }else{
-                            $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Validation Code Incorrect</div>');
-                            redirect('signup/index'); 
-                        }
+                        $_SESSION["user_id"] = $user_id;
+                        redirect('home/index');
                     }
                }
 

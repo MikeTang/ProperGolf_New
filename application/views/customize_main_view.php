@@ -9,7 +9,7 @@
         
         <div class="row mtop50">
             <div class="col-md-12">
-                <a class="selection-box-large" href="<?php echo site_url('signup/1') ?>">
+                <a class="selection-box-large" href="<?php echo site_url('signup') ?>">
                     <div class="row">
                         <div class="col-md-3 ">
                             <div class="icon-large">
@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <div class="row t_c mtop30">
+        <div class="row t_c mtop40">
             <p>Or choose the areas you want to improve on:</p>
         </div>
 
