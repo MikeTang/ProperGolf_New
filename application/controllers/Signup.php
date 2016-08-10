@@ -49,7 +49,7 @@ class Signup extends CI_Controller
           else
           {
                //if arrived here via pressing the sign up button
-               if ($this->input->post('btn_signup') == 'Signup')
+               if ($this->input->post('btn_signup') == 'Sign up')
                {
                     //check if user exists
                     $usr_result = $this->login_model->get_user_by_email($email);
