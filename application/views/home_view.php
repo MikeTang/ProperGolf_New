@@ -109,7 +109,9 @@
             <div class="col-md-6">
               <br>
               <h2>Frustrated?</h2>
-                <p>Golf information and instruction can be found all over YouTube and the internet. The problem is the information is incomplete, incorrect or not applicable to your needs.  It is difficult to distinguish the good from the bad.</p>
+                <p>Too much information on the internet?</p>
+                <p>Information incomplete, incorrect, or not applicable to you?</p>
+                <p>Can't distinguish the good from the bad?</p>
               <h2 class="mtop50">Introducing ProperGolf</h2>
                 <p>The most comprehensive and innovative step by step golf instruction ever created.  A complete program starting with the basics and proceeding to the most advanced golf theories and techniques.  We break golf down to simple to understand components.  Each component is presented in the correct sequence and reviewed in finite detail. This ensures there is no confusion in the learning process.</p>
               <br>
