@@ -20,11 +20,7 @@ class Login extends CI_Controller
      {
           $_SESSION["current_page"] = current_url();
           //check if locale is set
-          if (!isset($_SESSION["locale"])){
-             redirect("lang/set/cn");     
-          }
-
-          date_default_timezone_set('Asia/Hong_Kong');
+ 
           //get the posted values
           $phone = $this->input->post("txt_phone");
           $password = $this->input->post("txt_password");
@@ -131,7 +127,7 @@ class Login extends CI_Controller
           $this->session->unset_userdata('loginuser');
           $this->session->unset_userdata('userid');
           $this->session->sess_destroy();
-          redirect('login/index');
+          redirect('home/index');
      }
 
 }?>

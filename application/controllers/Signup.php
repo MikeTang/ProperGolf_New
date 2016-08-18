@@ -68,6 +68,7 @@ class Signup extends CI_Controller
                         $user_id = $usr_result->result()[0]->id;
 
                         $_SESSION["user_id"] = $user_id;
+                        $_SESSION["user"] = $usr_result->result()[0]; 
                         redirect('course/index');
                     }
                }
@@ -77,41 +78,6 @@ class Signup extends CI_Controller
                     redirect('signup/index');
                }
           }
-
-        
-
-    }
-
-  public function send_sms($phone, $code)
-  {
-    $appkey = '23362198';
-    $secretKey = '4242d946fbfb81ce01e90d29da999a88';
-
-    $c = new CI_TopClient;
-    $c->appkey = $appkey;
-    $c->secretKey = $secretKey;
-    $req = new CI_AlibabaAliqinFcSmsNumSendRequest;
-
-    // $req->setExtend("123456");
-    $req->setSmsType("normal");
-    $req->setSmsFreeSignName("注册验证");
-    $req->setSmsParam("{\"code\":\"".$code."\",\"product\":\"语法测试\"}");
-    $req->setRecNum($phone);
-    $req->setSmsTemplateCode("SMS_8340655");
-    $resp = $c->execute($req);
-
-    // print_r($resp);
-    // $succeed = $resp->{'alibaba_aliqin_fc_sms_num_send_response'}->{'result'}->{'msg'}; 
-    return $resp;
-  }
-
-    public function getValidationCode($number){
-        $code = rand(1000,9999);
-        $_SESSION["security_code"] = $code;
-        
-        $this->send_sms($number, $code);
-        // echo 'Security code sent to the number: ' . $number . ' (Test code is ' . $code . ')';
-        echo 'Security code sent to the number: ' . $number;
     }
 
 }?>
