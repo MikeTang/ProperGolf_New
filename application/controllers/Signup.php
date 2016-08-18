@@ -68,7 +68,7 @@ class Signup extends CI_Controller
                         $user_id = $usr_result->result()[0]->id;
 
                         $_SESSION["user_id"] = $user_id;
-                        redirect('home/index');
+                        redirect('course/index');
                     }
                }
 
