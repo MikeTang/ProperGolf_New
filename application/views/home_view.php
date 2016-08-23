@@ -61,7 +61,7 @@
   <div class="container">
       <div class="row title">
           <div class="col-md-12 t_c"><h1>Finally, a site that teaches Golf Properly!</h1></div>
-          <div class="col-md-12 t_c"><h2>Using proven methodologies in easy to understand bite-sized lessons.</h2></div>
+          <div class="col-md-12 t_c"><h2>Proven methodologies in easy to learn bite-sized lessons.</h2></div>
           
       </div>
       
@@ -85,7 +85,9 @@
             <div class="col-md-12 t_c">
                 <h2>Why ProperGolf?</h2>
                 <h3>100% proven to work for players of all levels.</h3>
-                <p>Complete step by step  step instruction and drills, taliored to your knowledge, ability, and specific needs.  Proper check points throughout the program tracks your progress and ensures proper foundations are set before moving on to more advanced skills. <br> This guarantees proper learning and progression to a consistant, powerful swing!
+                <p>&#10004; Complete step by step instruction and drills, tailored to your knowledge and ability.<br>
+                &#10004; Check points to track your progress and ensure proper foundations are set before moving on to more advanced skills.<br>
+                &#10004; Guarantees proper progression to a consistent, powerful swing!
 </p>
             </div>
         </div>
@@ -110,7 +112,7 @@
                   <div class="usp_image"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
                 </div>
                 <h3>Proper Practice</h3>
-                <p>Learn to practice properly and see rapid progression.</p>
+                <p>Learn to practice properly using set drills and see rapid progression.</p>
             </div>
         </div>
     </div>
@@ -153,7 +155,7 @@
             <div class="col-md-5">
                 
                 <h3>ProperGolf</h3>
-                <p >ProperGolf is not another typical program that promises you will be able to drive the ball 30 yards farther with this quick tip. We have spent thousands of hours crafting the ProperGolf learning curriculum based on proven methodoligies that works for golfers of all levels.
+                <p >ProperGolf is not another typical program that promises you will be able to drive the ball 30 yards farther with a quick tip. We have spent thousands of hours crafting the ProperGolf learning curriculum based on proven methodologies that works for golfers of all levels.
                 </p><br>
                 <p>Throughout the program, we start with basic concepts and build upon them via easy to follow bite-sized lessons. We teach how to build good habits, and also the logic on why those are good habits.  We provide comprehensive information so nothing is left unclear and questions and videos can be submitted for direct feedback on anything that is uncertain.
                 </p><br>
