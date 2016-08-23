@@ -9,9 +9,9 @@ class Login_model extends CI_Model
      }
 
      //get the username & password from tbl_usrs
-     function get_user($usr, $pwd)
+     function get_user($email, $pwd)
      {
-          $sql = "select * from grammarTestUsers where username = '" . $usr . "' and password = '" . md5($pwd) . "'";
+          $sql = "select * from users where email = '" . $email . "' and password = '" . md5($pwd) . "'";
           $query = $this->db->query($sql);
           return $query;
      }

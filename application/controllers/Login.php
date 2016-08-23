@@ -22,57 +22,47 @@ class Login extends CI_Controller
           //check if locale is set
  
           //get the posted values
-          $phone = $this->input->post("txt_phone");
+          $email = $this->input->post("txt_email");
           $password = $this->input->post("txt_password");
           $code = $this->input->post("txt_code");
 
           //set validations
-          $this->form_validation->set_rules("txt_phone", "Phone Number", "trim|required|numeric");
+          $this->form_validation->set_rules("txt_email", "Email", "trim|required");
           $this->form_validation->set_rules("txt_password", "Password", "trim|required");
-          $this->form_validation->set_rules("txt_code", "Code", "trim|required");
-          $title['title'] = "Welcome to ".TITLE;
+          $title['title'] = "ProperGolf - Log In";
 
 
           //if form was not submitted (i.e. arrived at login page)
           if ($this->form_validation->run() == FALSE)
           {
                //validation fails or not logged
-               $this->load->view('templates/header', $title);
-               $this->load->view('templates/nav_alt', $title);
-               $this->load->view('login_view');
-               $this->load->view('templates/footer_reg');
+              $this->load->view('templates/header', $title);
+              $this->load->view('templates/nav_simple', $title);
+              $this->load->view('login_view');
+              $this->load->view('templates/footer');
              
           }
           //if form was submitted (i.e. entered username/pass/code)
           else
           {
                //if arrived here via pressing the login button
-               if ($this->input->post('btn_login') == $_SESSION['BTN_LOGIN'])
+               if ($this->input->post('btn_login') == "Log In")
                {
                     //check if username and password is correct
-                    $usr_result = $this->login_model->get_user2($phone, $password);
-                    $code_session = $_SESSION["security_code"];
-
+                    $usr_result = $this->login_model->get_user($email, $password);
+ 
                     if ($usr_result->num_rows() > 0)  //user exists
                     {
-                         //if validation code is correct proceed
-                         if ($code == $code_session){
-                             
-                              //set the session variables
-                              $_SESSION["user_id"] = $usr_result->result()[0]->id;
-                              
-                              redirect('home/index'); 
-                         }else{ 
-                         //if validation code is incorrect show warning
-                             $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Please enter the correct validation code</div>');
-                              redirect('login/index'); 
-                         }
+                        //set the session variables
+                        $_SESSION["user"] = $usr_result->result()[0];
+                        
+                        redirect('home/index'); 
                     }
                     else
                     {    
-                         //User doesn't exist or entered incorrectly
-                         $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Sorry, incorrect phone number or password.</div>');
-                         redirect('login/index');
+                        //User doesn't exist or entered incorrectly
+                        $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Sorry, incorrect email or password.</div>');
+                        redirect('login/index');
                     }
                }
 
@@ -123,9 +113,7 @@ class Login extends CI_Controller
      } 
 
      public function logout(){
-          $this->session->unset_userdata('username');
-          $this->session->unset_userdata('loginuser');
-          $this->session->unset_userdata('userid');
+          $this->session->unset_userdata('user');
           $this->session->sess_destroy();
           redirect('home/index');
      }

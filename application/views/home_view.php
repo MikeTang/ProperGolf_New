@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-clear">
+<nav class="navbar navbar-default navbar-clear navbar-home">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -25,12 +25,25 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
-        <li>
-          <a href="">
-            Log In
+        <?php if (isset($_SESSION["user"])) :?>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle user-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> 
+          <?php echo $_SESSION["user"]->name; ?></span>
+          <span class="caret">
           </a>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="transition">My Profile</a></li>
+            <li><a href="#" class="transition">Course Settings</a></li>
+            <li><a href="<?php echo site_url('login/logout');?>" class="transition">Log out</a></li>
+          </ul>
         </li>
-        <li>
+        <?php else :?>
+          <li>
+            <a href="<?php echo site_url('login/index') ?>">
+              Log In
+            </a>
+          </li>
+        <?php endif; ?>
   
       </ul>
     </div><!-- /.navbar-collapse -->
