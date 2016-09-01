@@ -99,11 +99,11 @@ body{
 .ml10{margin-left:10px;}
 .mr10{margin-right:10px;}
 .mt0{margin-top: 0 !important;}
-.mt10{margin-top: 10px;}
-.mt20{margin-top: 20px;}
-.mt40{margin-top: 40px;}
-.mb20{margin-bottom: 20px;}
-.mb40{margin-bottom: 40px;}
+.mt10{margin-top: 10px !important;}
+.mt20{margin-top: 20px !important;}
+.mt40{margin-top: 40px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mb40{margin-bottom: 40px !important;}
 .mb0{margin-bottom: 0 !important;}
 
 .transition{
@@ -238,7 +238,7 @@ header {
 
  .hero_button{
   padding: 15px 30px;
-  border-radius: 5px;
+  border-radius: 4px;
   background: #35ad58;
   color:#fff;
   font-size: 16px;
@@ -255,6 +255,10 @@ header {
     text-decoration: none;
   }
   .hero_button:visited{
+    color:#fff;
+    text-decoration: none;
+  }
+  .hero_button:focus{
     color:#fff;
     text-decoration: none;
   }
@@ -321,7 +325,12 @@ p {
 .video_box {
   margin-top: 95px;
   height: 300px;
-  background: #ddd; }
+  background: #ddd; 
+  text-align: center;
+  line-height: 300px;
+  font-size: 70px;
+}
+
 
 .signup .signup_box {
   height: 300px;
@@ -692,6 +701,56 @@ h2 {
     border: 9px solid transparent;
     border-top: 0;
     border-bottom-color: #fff;
+}
+
+/*Path Page*/
+
+.section-path-1 .video_box{
+    margin-top: 0px;
+}
+.section-path-1{
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+.section-path-1 h2{
+    margin-top: 30px;
+}
+.section-path-1 .hero_button{
+    margin-top: 40px;
+    padding: 10px 40px;
+    float:left;
+    text-decoration: none;
+}
+
+.container2{
+    max-width: 900px;
+}
+
+.section-path-2 h3{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.section-path-2 .video_box{
+    margin-top: 20px;
+    height:200px;
+    line-height: 200px;
+    text-align: center;
+    font-size:70px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3)
+}
+
+.section-path-2 h4{
+    margin-top: 30px;
+    color:#555;
+}
+.section-path-2 p{
+    margin-top: 20px;
+    font-size:14px;
+    line-height: 20px;
+    color:#777;
 }
 /* ==========================================================================
    Media Queries

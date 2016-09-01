@@ -56,7 +56,7 @@ class Login extends CI_Controller
                         //set the session variables
                         $_SESSION["user"] = $usr_result->result()[0];
                         
-                        redirect('home/index'); 
+                        redirect('course/index'); 
                     }
                     else
                     {    
