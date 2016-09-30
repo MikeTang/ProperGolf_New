@@ -43,10 +43,10 @@
 
 // define('BASE_URL', 'http://yufa.jiongbook.com/');
 
-define('BASE_URL', 'http://localhost:8888/');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', 'root');
+define('BASE_URL', 'http://properswing.com/');
+define('DB_HOSTNAME', '68.178.143.77');
+define('DB_USER', 'propergolf');
+define('DB_PASS', 'ProGolf123!');
 define('DB_NAME', 'propergolf');
 define('TIME_LIMIT', 602000);
 
