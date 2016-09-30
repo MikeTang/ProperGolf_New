@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
- 
+
 class Login extends CI_Controller
 {
 
@@ -20,7 +20,7 @@ class Login extends CI_Controller
      {
           $_SESSION["current_page"] = current_url();
           //check if locale is set
- 
+
           //get the posted values
           $email = $this->input->post("txt_email");
           $password = $this->input->post("txt_password");
@@ -40,7 +40,7 @@ class Login extends CI_Controller
               $this->load->view('templates/nav_simple', $title);
               $this->load->view('login_view');
               $this->load->view('templates/footer');
-             
+
           }
           //if form was submitted (i.e. entered username/pass/code)
           else
@@ -50,16 +50,16 @@ class Login extends CI_Controller
                {
                     //check if username and password is correct
                     $usr_result = $this->login_model->get_user($email, $password);
- 
+
                     if ($usr_result->num_rows() > 0)  //user exists
                     {
                         //set the session variables
                         $_SESSION["user"] = $usr_result->result()[0];
-                        
-                        redirect('course/index'); 
+
+                        redirect('path');
                     }
                     else
-                    {    
+                    {
                         //User doesn't exist or entered incorrectly
                         $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Sorry, incorrect email or password.</div>');
                         redirect('login/index');
@@ -74,43 +74,43 @@ class Login extends CI_Controller
      }
 
      //Used for creating the image for the validation code
-     public function create_image() 
-     { 
-         //Generate a random string using md5 
-         $md5_hash = md5(rand(0,999)); 
-         //Trim it down to 5 
-         $security_code = substr($md5_hash, 15, 5); 
+     public function create_image()
+     {
+         //Generate a random string using md5
+         $md5_hash = md5(rand(0,999));
+         //Trim it down to 5
+         $security_code = substr($md5_hash, 15, 5);
 
          //Set the session to store the security code
          $_SESSION["security_code"] = $security_code;
 
-         //Set the image width and height 
-         $width = 60; 
-         $height = 20;  
+         //Set the image width and height
+         $width = 60;
+         $height = 20;
 
-         //Create the image resource 
-         $image = ImageCreate($width, $height);  
+         //Create the image resource
+         $image = ImageCreate($width, $height);
 
-         //We are making three colors, white, black and gray 
-         $white = ImageColorAllocate($image, 255, 255, 255); 
-         $black = ImageColorAllocate($image, 0, 0, 0); 
-         $grey = ImageColorAllocate($image, 204, 204, 204); 
+         //We are making three colors, white, black and gray
+         $white = ImageColorAllocate($image, 255, 255, 255);
+         $black = ImageColorAllocate($image, 0, 0, 0);
+         $grey = ImageColorAllocate($image, 204, 204, 204);
 
-         //Make the background black 
-         ImageFill($image, 0, 0, $white); 
+         //Make the background black
+         ImageFill($image, 0, 0, $white);
 
          //Add randomly generated string in white to the image
-         ImageString($image, 5, 10, 3, $security_code, $black); 
- 
-         //Tell the browser what kind of file is come in 
-         header("Content-Type: image/jpeg"); 
+         ImageString($image, 5, 10, 3, $security_code, $black);
 
-         //Output the newly created image in jpeg format 
-         ImageJpeg($image); 
-         
+         //Tell the browser what kind of file is come in
+         header("Content-Type: image/jpeg");
+
+         //Output the newly created image in jpeg format
+         ImageJpeg($image);
+
          //Free up resources
-         ImageDestroy($image); 
-     } 
+         ImageDestroy($image);
+     }
 
      public function logout(){
           $this->session->unset_userdata('user');
