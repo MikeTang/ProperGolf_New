@@ -13,12 +13,19 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-   
+
+      <?php if ($current != 'Customize') :?>
+        <ul class="nav navbar-nav navbar-normal">
+          <li <?php if ($current == "course") echo "class='active'" ;?>><a href="<?php echo site_url('course')?>"><i class="fa fa-road" aria-hidden="true"></i>My Path</a></li>
+          <li <?php if ($current == "view all") echo "class='active'" ;?>><a href="<?php echo site_url('course')?>"><i class="fa fa-video-camera" aria-hidden="true"></i>All Courses</a></li>
+        </ul>
+      <?php endif; ?>
+
       <ul class="nav navbar-nav navbar-right clr-dark">
-        
+
         <?php if (isset($_SESSION["user"])) :?>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle user-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> 
+          <a href="#" class="dropdown-toggle user-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
           <?php echo $_SESSION["user"]->name; ?></span>
           <span class="caret">
           </a>
@@ -35,9 +42,9 @@
             </a>
           </li>
         <?php endif; ?>
-        
-        
-  
+
+
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

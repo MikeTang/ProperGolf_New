@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
- 
+
 class Customize extends CI_Controller
 {
 
@@ -17,7 +17,8 @@ class Customize extends CI_Controller
 
      public function index()
      {
-          $data['title']='ProperGolf';  
+          $data['title']='ProperGolf';
+          $data['current']='Customize';
           $this->load->view('templates/header', $data);
           $this->load->view('templates/nav_simple', $data);
           $this->load->view('customize_main_view');
@@ -45,12 +46,12 @@ class Customize extends CI_Controller
           if ($driver == 1)
                array_push($sessiondata, 'driver');
           redirect('customize/area/1');
-          
+
      }
 
      public function area()
      {
-          $data['title']='ProperGolf';  
+          $data['title']='ProperGolf';
           $this->load->view('templates/header', $data);
           $this->load->view('templates/nav_simple', $data);
           $this->load->view('customize_area_view');

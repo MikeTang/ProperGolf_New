@@ -3,37 +3,39 @@
         <div class="row">
             <div class="col-md-6">
               	<h2>Your Learning Path</h2>
-               
+
             	<p>The most comprehensive and innovative step by step golf instruction ever created.  A complete program starting with the basics and proceeding to the most advanced golf theories and techniques.</p>
 
-            	<a href="#" class="hero_button">Start Learning</a>
+            	<a href="/course/1/1" class="hero_button">Start Learning</a>
               <br>
              </div>
-            
+
             <div class="col-md-6">
               <div class="video_box">
                   <i class="fa fa-play-circle" aria-hidden="true"></i>
               </div>
             </div>
-        
-          
+
+
         </div>
     </div>
 </div>
 
 <div class="container-fluid section2 section-path-2">
     <div class="container container2">
-        
+
         <div class="row mb20">
             <div class="col-md-12">
               	<h3>Section A - Beginner Golf Information</h3>
              </div>
         </div>
-        <div class="row mb40">   
+        <div class="row mb40">
             <div class="col-md-4">
+              <a href="/course/1/1">
               <div class="video_box video_box_small">
                 <i class="fa fa-play-circle" aria-hidden="true"></i>
               </div>
+              </a>
             </div>
 
             <div class="col-md-8">
@@ -48,7 +50,7 @@
               	</div>
             </div>
         </div>
-        <div class="row mb40">   
+        <div class="row mb40">
             <div class="col-md-4">
               <div class="video_box video_box_small">
                 <i class="fa fa-play-circle" aria-hidden="true"></i>
@@ -73,7 +75,7 @@
                 <h3>Section B - Beginner Golf Swing Theory &amp; Mechanics</h3>
              </div>
         </div>
-        <div class="row mb40">   
+        <div class="row mb40">
             <div class="col-md-4">
               <div class="video_box video_box_small">
                 <i class="fa fa-play-circle" aria-hidden="true"></i>
@@ -92,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mb40">   
+        <div class="row mb40">
             <div class="col-md-4">
               <div class="video_box video_box_small">
                 <i class="fa fa-play-circle" aria-hidden="true"></i>

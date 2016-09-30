@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
- 
+
 class Course extends CI_Controller
 {
 
@@ -15,13 +15,35 @@ class Course extends CI_Controller
           //load the login model
      }
 
-     public function index()
+     public function path()
      {
-          $data['title']='ProperGolf';  
+          $data['title']='ProperGolf';
+          $data['current']='course';
           $this->load->view('templates/header', $data);
           $this->load->view('templates/nav_simple', $data);
           $this->load->view('course_main_view');
           $this->load->view('templates/footer');
      }
+
+     public function course($course_code)
+     {
+          $data['title']='ProperGolf';
+          $data['current']='course';
+          $this->load->view('templates/header', $data);
+          $this->load->view('templates/nav_simple', $data);
+          $this->load->view('course_lesson_view');
+          $this->load->view('templates/footer');
+     }
+      public function lesson($course_code, $lesson_code)
+     {
+          $data['title']='ProperGolf';
+          $data['current']='course';
+          $this->load->view('templates/header', $data);
+          $this->load->view('templates/nav_simple', $data);
+          $this->load->view('course_lesson_view');
+          $this->load->view('templates/footer');
+     }
+
+
 
 }?>
