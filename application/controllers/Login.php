@@ -30,6 +30,7 @@ class Login extends CI_Controller
           $this->form_validation->set_rules("txt_email", "Email", "trim|required");
           $this->form_validation->set_rules("txt_password", "Password", "trim|required");
           $title['title'] = "ProperGolf - Log In";
+          $title['current'] = "login";
 
 
           //if form was not submitted (i.e. arrived at login page)
@@ -56,7 +57,7 @@ class Login extends CI_Controller
                         //set the session variables
                         $_SESSION["user"] = $usr_result->result()[0];
 
-                        redirect('course/path');
+                        redirect('path');
                     }
                     else
                     {

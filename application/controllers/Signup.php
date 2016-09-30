@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
- 
+
 class Signup extends CI_Controller
 {
 
@@ -43,7 +43,7 @@ class Signup extends CI_Controller
             $this->load->view('templates/nav_simple', $data);
             $this->load->view('signup_view');
             $this->load->view('templates/footer');
-             
+
           }
           //if form was submitted (i.e. entered username/pass/code)
           else
@@ -53,13 +53,13 @@ class Signup extends CI_Controller
                {
                     //check if user exists
                     $usr_result = $this->login_model->get_user_by_email($email);
-  
+
                     if ($usr_result->num_rows() > 0){
                          //user exists, login instead
                          $this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Account already exists, please login instead</div>');
-                          redirect('signup/index');      
+                          redirect('signup/index');
                     }
-                    else{    
+                    else{
                         //create user in db
                         $this->login_model->create_user($name, $email, $password);
                         //save user_id in session
@@ -68,8 +68,8 @@ class Signup extends CI_Controller
                         $user_id = $usr_result->result()[0]->id;
 
                         $_SESSION["user_id"] = $user_id;
-                        $_SESSION["user"] = $usr_result->result()[0]; 
-                        redirect('course/index');
+                        $_SESSION["user"] = $usr_result->result()[0];
+                        redirect('course/path');
                     }
                }
 

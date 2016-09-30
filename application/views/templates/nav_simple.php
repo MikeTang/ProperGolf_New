@@ -16,8 +16,8 @@
 
       <?php if ($current != 'Customize') :?>
         <ul class="nav navbar-nav navbar-normal">
-          <li <?php if ($current == "course") echo "class='active'" ;?>><a href="<?php echo site_url('course')?>"><i class="fa fa-road" aria-hidden="true"></i>My Path</a></li>
-          <li <?php if ($current == "view all") echo "class='active'" ;?>><a href="<?php echo site_url('course')?>"><i class="fa fa-video-camera" aria-hidden="true"></i>All Courses</a></li>
+          <li <?php if ($current == "course") echo "class='active'" ;?>><a href="<?php echo site_url('path')?>"><i class="fa fa-road" aria-hidden="true"></i>My Path</a></li>
+          <li <?php if ($current == "view all") echo "class='active'" ;?>><a href="<?php echo site_url('path')?>"><i class="fa fa-video-camera" aria-hidden="true"></i>All Courses</a></li>
         </ul>
       <?php endif; ?>
 

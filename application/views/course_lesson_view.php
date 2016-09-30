@@ -5,7 +5,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <ol class="breadcrumb">
-                      <li><a href="/path">< Back to Learning Path</a></li>
+                      <li><a href="/index.php/path">< Back to Learning Path</a></li>
                     </ol>
                 </div>
 

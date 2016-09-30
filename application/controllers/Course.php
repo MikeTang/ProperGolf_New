@@ -37,7 +37,7 @@ class Course extends CI_Controller
       public function lesson($course_code, $lesson_code)
      {
           $data['title']='ProperGolf';
-          $data['current']='course';
+          $data['current']='lesson';
           $this->load->view('templates/header', $data);
           $this->load->view('templates/nav_simple', $data);
           $this->load->view('course_lesson_view');
