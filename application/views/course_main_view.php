@@ -6,7 +6,9 @@
 
             	<p>The most comprehensive and innovative step by step golf instruction ever created.  A complete program starting with the basics and proceeding to the most advanced golf theories and techniques.</p>
 
-            	<a href="/course/1/1" class="hero_button">Start Learning</a>
+
+            	<a href="index.php/course/1/1" class="hero_button">Start Learning</a>
+
               <br>
              </div>
 
@@ -31,7 +33,11 @@
         </div>
         <div class="row mb40">
             <div class="col-md-4">
+<<<<<<< HEAD
               <a href="/course/1/1">
+=======
+              <a href="index.php/course/1/1">
+>>>>>>> fc671cc7f26da68e2c083f0e2230c61f6792c8d7
               <div class="video_box video_box_small">
                 <i class="fa fa-play-circle" aria-hidden="true"></i>
               </div>
