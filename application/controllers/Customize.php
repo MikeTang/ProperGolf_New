@@ -52,6 +52,7 @@ class Customize extends CI_Controller
      public function area()
      {
           $data['title']='ProperGolf';
+          $data['current']='Customize';
           $this->load->view('templates/header', $data);
           $this->load->view('templates/nav_simple', $data);
           $this->load->view('customize_area_view');

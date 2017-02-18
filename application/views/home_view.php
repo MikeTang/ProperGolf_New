@@ -61,7 +61,7 @@
   <div class="container">
       <div class="row title">
           <div class="col-md-12 t_c"><h1>Finally, a site that teaches Golf Properly!</h1></div>
-          <div class="col-md-12 t_c"><h2>Proven methodologies in easy to learn bite-sized lessons.</h2></div>
+          <div class="col-md-12 t_c"><h2>Proven techniques in easy to learn bite-sized lessons.</h2></div>
           
       </div>
       
