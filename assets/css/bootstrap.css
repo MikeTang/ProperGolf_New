@@ -1082,9 +1082,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
-  color: #89867e;
+  color: #000;
+  font-weight: 400;
 }
 input,
 button,

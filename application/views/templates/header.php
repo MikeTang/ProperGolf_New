@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="<?php echo asset_url();?>css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo asset_url();?>css/proxima-nova.css">
         <link rel="stylesheet" href="<?php echo asset_url();?>css/main2.css">
+        <link rel="stylesheet" href="<?php echo asset_url();?>css/colors.css">
         <!-- <script src="https://use.fontawesome.com/3b3ac5636e.js"></script> -->
 	</head>
 	<body>
