@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-clear navbar-home">
+<nav class="navbar navbar-default navbar-clear navbar-home transition">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -158,7 +158,7 @@
 
             <div class="col-md-6">
               <div class="video_box">
-
+                <iframe src="https://www.youtube.com/embed/sXtekwuT8R0" frameborder="0" width="100%" allowfullscreen></iframe>
               </div>
             </div>
 
@@ -188,7 +188,7 @@
 
             <div class="col-md-2">
               <div class="versus-line"></div>
-              <div class="versus">&nbsp;Vs.</div>
+              <div class="versus clr-2 b-clr-2">&nbsp;Vs.</div>
             </div>
 
             <div class="col-md-5">
